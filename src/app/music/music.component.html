@@ -1,0 +1,15 @@
+<!--<p *ngFor="let songLink of songsLinks">{{ songLink }}</p>-->
+<!--<hr>-->
+
+<form #mainForm="ngForm" (ngSubmit)="onSubmit(mainForm)">
+  <input type="text" placeholder="album link" name="albumLink" ngModel="">
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<div *ngFor="let songName of songsNames; let i = index ">
+  <a [href]="downloadLinks[i]">{{ songName }}</a>
+</div>
+
+

@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build && firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,10 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "install": "^0.12.2",
+    "jssoup": "0.0.10",
+    "node-html-parser": "^1.1.15",
+    "nodenpm": "^0.1.6",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
